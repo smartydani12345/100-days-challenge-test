@@ -2,7 +2,7 @@
 //Explain & TIP: Objects are collections of properties, kind of like a box for storing related information. You can create an object to group related data and access its properties using either dot notation or bracket notation.
 //Answer: Please try to do it yourself first!
 // This sets up an object for a car with specific details
-var cars = {
+let cars = {
     make: "Toyota",
     model: "Corolla",
     year: 2020
@@ -14,7 +14,7 @@ console.log(cars.model); // Outputs: Corolla
 //Explain & TIP: You can add new properties to an object or change existing ones after the object is created. This flexibility allows objects to be dynamically updated as needed.
 //Answer: Please try to do it yourself first!
 // Starting with our car object
-var car = {
+let car = {
     make: "Toyota",
     model: "Corolla",
     year: 2020,
@@ -31,12 +31,13 @@ console.log(car); // Outputs the car object with the new color and updated year
 //Answer: Please try to do it yourself first!
 // This function shows every detail about an object
 function logObjectProperties(obj) {
-    for (var property in obj) {
+    for (let property in obj) {
         // Loops through each property in the object
-        console.log("".concat(property, ": ").concat(obj[property]));
+        console.log(`${property}: ${obj[property]}`);
         // Shows the property name and its value
     }
 }
 // Using the function with a car object
 logObjectProperties({ make: "Toyota", model: "Corolla", year: 2021, color: "blue" });
+export {};
 // It tells us each piece of information stored about the car.

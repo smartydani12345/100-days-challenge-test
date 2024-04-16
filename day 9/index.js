@@ -2,7 +2,7 @@
 //Explain & TIP: Use an if statement to check the alien's color. This introduces you to simple conditionals.
 //Answer: Please try to do it yourself first!
 //Version that passes:
-var alien_color = "green";
+let alien_color = "green";
 if (alien_color == "green") {
     console.log("You just earned 5 points!");
 }
@@ -66,3 +66,4 @@ else if (alien_color == "yellow") {
 else if (alien_color == "red") {
     console.log("You earned 15 points.");
 }
+export {};

@@ -2,13 +2,9 @@
 //Explain & TIP: This program can handle any number of scores you give it, and it tells you the average score. Handy for seeing how well you did overall!
 //Answer: Please try to do it yourself first!
 // This program calculates the average of all scores given
-function averageScore() {
-    var scores = [];
-    for (var _i = 0; _i < arguments.length; _i++) {
-        scores[_i] = arguments[_i];
-    }
+function averageScore(...scores) {
     // Adds all scores together and divides by the number of scores
-    var total = scores.reduce(function (sum, score) { return sum + score; }, 0);
+    let total = scores.reduce((sum, score) => sum + score, 0);
     return total / scores.length;
 }
 // Example: finding the average of four scores
@@ -25,24 +21,25 @@ function makeAdder(valueToAdd) {
     };
 }
 // Making a magic box that adds 5
-var addFive = makeAdder(5);
+let addFive = makeAdder(5);
 console.log(addFive(10)); // If we put 10 in the box, it gives us 15
 // We made a function (magic box) that adds 5 to any number.
 //Question 60: Self-Running User Profile: Create a quick, self-setup profile for a user that can tell you the user's name and age.
 //Explain & TIP: This is like a self-building lego set. Once you start it, it builds a user profile by itself and can tell you about the user.
 //Answer: Please try to do it yourself first!
 // This profile sets itself up and can share info about the user
-var userProfile = (function () {
+let userProfile = (function () {
     // The user's details are kept inside
-    var name = "John";
-    var age = 30;
+    let name = "John";
+    let age = 30;
     // This part shares the user's details
     return {
         displayInfo: function () {
-            console.log("Name: ".concat(name, ", Age: ").concat(age));
+            console.log(`Name: ${name}, Age: ${age}`);
         }
     };
 })();
 // Asking the profile to tell us about the user
 userProfile.displayInfo(); // It says the user's name and age
+export {};
 // We made a self-setup profile that can talk about the user.

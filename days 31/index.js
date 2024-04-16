@@ -2,7 +2,7 @@
 //Explain & TIP: Adding elements to an array can be easily done using the .push() method. It allows you to add new items to the end of an array.
 //Answer: Please try to do it yourself first!
 // Defines an array with three favorite fruits
-var favoriteFruits = ["Apple", "Banana", "Cherry"];
+let favoriteFruits = ["Apple", "Banana", "Cherry"];
 favoriteFruits.push("Mango"); // Adds "Mango" to the end of the array
 console.log(favoriteFruits); // Outputs: ['Apple', 'Banana', 'Cherry', 'Mango']
 // This line adds a new fruit to our list of favorites.
@@ -14,7 +14,7 @@ function removeLastElement(arr) {
     return arr.pop(); // Removes and returns the last element of the array
 }
 // Example: Removing the last fruit from the array
-var fruit = ["Apple", "Banana", "Cherry"];
+const fruit = ["Apple", "Banana", "Cherry"];
 console.log(removeLastElement(fruit)); // Outputs: 'Cherry'
 console.log(fruit); // Outputs: ['Apple', 'Banana']
 // Here, we take out the last fruit and show the updated list.
@@ -23,12 +23,13 @@ console.log(fruit); // Outputs: ['Apple', 'Banana']
 //Answer: Please try to do it yourself first!
 // This function finds "Banana" in the fruits array and replaces it with "Mango"
 function replaceBananaWithMango(fruits) {
-    var index = fruits.indexOf("Banana"); // Finds the index of "Banana"
+    const index = fruits.indexOf("Banana"); // Finds the index of "Banana"
     if (index !== -1)
         fruits[index] = "Mango"; // Replaces "Banana" with "Mango" if found
 }
 // Example: Replacing "Banana" in the array
-var fruits = ["Apple", "Banana", "Cherry"];
+const fruits = ["Apple", "Banana", "Cherry"];
 replaceBananaWithMango(fruits);
 console.log(fruits); // Outputs: ['Apple', 'Mango', 'Cherry']
+export {};
 // We're swapping "Banana" for "Mango" in our fruit list.

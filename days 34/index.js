@@ -2,7 +2,7 @@
 //Explain & TIP: The Math.sqrt() function is a straightforward way to calculate the square root of any positive number, directly providing the result you need.
 //Answer: Please try to do it yourself first!
 // Finds the square root of 144 using Math.sqrt()
-var squareRoot = Math.sqrt(144);
+const squareRoot = Math.sqrt(144);
 console.log(squareRoot); // Outputs: 12
 // This line effectively calculates and shows the square root of 144.
 //Question 101: Generate a random integer between 1 and 10.
@@ -18,6 +18,7 @@ console.log(getRandomInt()); // Outputs a random integer between 1 and 10
 //Explain & TIP: The Math.abs() function returns the absolute value of a number, which is useful for finding the magnitude of a difference without regard to direction.
 //Answer: Please try to do it yourself first!
 // Calculates the absolute difference between -5 and 5
-var difference = Math.abs(-5 - 5);
+const difference = Math.abs(-5 - 5);
 console.log(difference); // Outputs: 10
+export {};
 // This line shows the absolute value of the difference between -5 and 5, ignoring the sign.

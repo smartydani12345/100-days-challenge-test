@@ -86,4 +86,5 @@ function evaluateGrade(grade) {
     }
 }
 evaluateGrade("B"); // Outputs: Good
+export {};
 // Uses a switch statement to evaluate the grade and defaults to "Invalid grade" if no match is found.

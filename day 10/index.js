@@ -1,7 +1,7 @@
 //Question 28: Stages of Life: Determine a person’s life stage with an if-else chain.
 //Explain & TIP: Use age to check the life stage. This practice shows how to handle multiple conditions with an if-else chain.
 //Answer: Please try to do it yourself first!
-var age = 25;
+let age = 25;
 if (age < 2) {
     console.log("The person is a baby.");
 }
@@ -23,7 +23,7 @@ else {
 //Question 29: Favorite Fruit: Create an array for your favorite fruits and check if certain fruits are included.
 //Explain & TIP: Arrays can store multiple items like fruit names. Use if statements to check for specific fruits.
 //Answer: Please try to do it yourself first!
-var favorite_fruits = ["apples", "bananas", "cherries"];
+let favorite_fruits = ["apples", "bananas", "cherries"];
 if (favorite_fruits.includes("bananas")) {
     console.log("You really like bananas!");
 }
@@ -34,12 +34,13 @@ if (favorite_fruits.includes("apples")) {
 //Question 30: Hello Admin: Greet users differently, especially 'admin'.
 //Explain & TIP: Loop through usernames to personalize greetings. This introduces looping and conditional logic together.
 //Answer: Please try to do it yourself first!
-var usernames = ["admin", "user1", "user2", "user3", "user4"];
-usernames.forEach(function (username) {
+let usernames = ["admin", "user1", "user2", "user3", "user4"];
+usernames.forEach(username => {
     if (username === "admin") {
         console.log("Hello admin, would you like to see a status report?");
     }
     else {
-        console.log("Hello ".concat(username, ", thank you for logging in again."));
+        console.log(`Hello ${username}, thank you for logging in again.`);
     }
 });
+export {};

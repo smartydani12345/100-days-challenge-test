@@ -3,7 +3,7 @@
 //Answer: Please try to do it yourself first!
 // This function shows how to assign and update variable values
 function updateVariable() {
-    var number = 10; // Initially assigns the value 10
+    let number = 10; // Initially assigns the value 10
     console.log("Initial value:", number); // Logs the initial value
     number = 20; // Updates the value to 20
     console.log("Updated value:", number); // Logs the updated value
@@ -15,9 +15,9 @@ updateVariable();
 //Answer: Please try to do it yourself first!
 // This function swaps the values of two variables
 function swapValues() {
-    var a = 5, b = 10; // Initially, a is 5 and b is 10
+    let a = 5, b = 10; // Initially, a is 5 and b is 10
     console.log("Before swap: a =", a, "b =", b);
-    var temp = a; // Temporarily stores the value of a
+    let temp = a; // Temporarily stores the value of a
     a = b; // Sets a to b's value
     b = temp; // Sets b to a's original value stored in temp
     console.log("After swap: a =", a, "b =", b); // Logs the swapped values
@@ -29,7 +29,7 @@ swapValues();
 //Answer: Please try to do it yourself first!
 // This function uses compound assignment operators for different operations
 function useCompoundOperators() {
-    var x = 4; // Starts with x equal to 4
+    let x = 4; // Starts with x equal to 4
     console.log("Initial x:", x);
     x += 2; // Adds 2 to x
     console.log("After addition:", x); // Shows x after addition
@@ -41,4 +41,5 @@ function useCompoundOperators() {
     console.log("After division:", x); // Shows x after division
 }
 useCompoundOperators();
+export {};
 // We simplify arithmetic operations on x using compound assignment operators, like a shortcut.

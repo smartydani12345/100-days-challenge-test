@@ -30,4 +30,5 @@ function areStringsEqualIgnoreCase(str1, str2) {
 }
 console.log(areStringsEqualIgnoreCase("hello", "Hello")); // Outputs: true
 console.log(areStringsEqualIgnoreCase("world", "Word")); // Outputs: false
+export {};
 // We make both strings lowercase to ensure the comparison ignores case differences.

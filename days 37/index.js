@@ -2,7 +2,7 @@
 //Explain & TIP: You can get the current hour using the Date object and its getHours() method. Remember, hours are in 24-hour format, so 12 PM is 12.
 //Answer: Please try to do it yourself first!
 // Checks the current hour and logs "Good Morning" if it's before 12 PM
-var currentTime = new Date();
+const currentTime = new Date();
 if (currentTime.getHours() < 12) {
     console.log("Good Morning"); // It's morning if before 12 PM
 }
@@ -47,4 +47,5 @@ function categorizeAge(age) {
 console.log(categorizeAge(12)); // Outputs: child
 console.log(categorizeAge(18)); // Outputs: teenager
 console.log(categorizeAge(25)); // Outputs: adult
+export {};
 // Based on the age provided, we log the corresponding age group.

@@ -30,4 +30,5 @@ function isValueNaN(value) {
 // Examples: Checking different values
 console.log(isValueNaN("hello")); // Outputs: true, because "hello" isn't a number
 console.log(isValueNaN(123)); // Outputs: false, because 123 is a number
+export {};
 // This way, we can guard against unexpected non-numeric values in our calculations or inputs.

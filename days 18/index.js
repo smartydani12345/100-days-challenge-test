@@ -2,7 +2,7 @@
 //Explain & TIP: Just like a box can contain smaller boxes, objects can contain other objects. This helps organize related information neatly.
 //Answer: Please try to do it yourself first!
 // Sets up details about a smartphone
-var smartphone = {
+let smartphone = {
     make: "Samsung",
     model: "Galaxy S21",
     specs: {
@@ -17,26 +17,27 @@ console.log(smartphone);
 //Explain & TIP: Breaking down a complex list into simpler parts makes it easier to work with and understand specific pieces of information.
 //Answer: Please try to do it yourself first!
 // A list showing a programmer's skills in detail
-var developerSkills = {
+let developerSkills = {
     languages: ["JavaScript", "TypeScript", "Python"],
     frameworks: ["React", "Angular", "Vue"],
     tools: ["Git", "Webpack", "Docker"]
 };
 // Getting specific skills from the list
-var languages = developerSkills.languages, frameworks = developerSkills.frameworks, tools = developerSkills.tools;
+let { languages, frameworks, tools } = developerSkills;
 // Showing a skill from each category
-console.log("Language: ".concat(languages[0], ", Framework: ").concat(frameworks[0], ", Tool: ").concat(tools[0]));
+console.log(`Language: ${languages[0]}, Framework: ${frameworks[0]}, Tool: ${tools[0]}`);
 //Question 54: Making Flexible Object Keys: Learn how to set up a list where you can change the name of each section based on what you need at that moment, like adjusting labels based on user choices.
 //Explain & TIP: This is like having labels you can rewrite anytime, which is great for when you need to adjust your list based on new information.
 //Answer: Please try to do it yourself first!
 // A way to make a flexible list
 function createObjectWithDynamicKey(key, value) {
-    var dynamicObject = {};
+    let dynamicObject = {};
     // Setting up a section in the list with a changeable name
     dynamicObject[key] = value;
     return dynamicObject;
 }
 // Using the flexible list setup for a user's preference
-var userPreference = createObjectWithDynamicKey("theme", "dark");
+let userPreference = createObjectWithDynamicKey("theme", "dark");
 // Showing the user's choice
 console.log(userPreference);
+export {};

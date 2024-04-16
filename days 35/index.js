@@ -12,7 +12,7 @@ console.log(getRandomBoolean()); // Outputs either true or false randomly
 //Answer: Please try to do it yourself first!
 // This function generates a random hexadecimal color code
 function getRandomHexColor() {
-    var color = '#' + Math.floor(Math.random() * 0xFFFFFF).toString(16).padStart(6, '0');
+    const color = '#' + Math.floor(Math.random() * 0xFFFFFF).toString(16).padStart(6, '0');
     return color; // Returns the random color code
 }
 console.log(getRandomHexColor()); // Outputs a random hex color code like #ff3e12
@@ -25,4 +25,5 @@ function rollDice() {
     return Math.floor(Math.random() * 6) + 1; // Calculates a random integer from 1 to 6
 }
 console.log(rollDice()); // Outputs a random number between 1 and 6
+export {};
 // Here, we mimic the action of rolling a dice and getting a result.

@@ -27,4 +27,5 @@ function extractFirstTenChars(str) {
 }
 // Example: Taking the first 10 characters of a sentence
 console.log(extractFirstTenChars("Hello, JavaScript world!")); // Shows the first 10 characters
+export {};
 // It gives us a smaller piece of the original text, just the beginning part.

@@ -34,5 +34,5 @@ console.log(16/2);
 //Answer: Please try to do it yourself first!
 
 
-let favouritenumber = "7";
-console.log(  "my favourite number is" , favouritenumber)
+let favoriteNumber: number = 7; // This saves your favorite number
+console.log(`My favorite number is ${favoriteNumber}.`); // This shows the message with your favorite number
