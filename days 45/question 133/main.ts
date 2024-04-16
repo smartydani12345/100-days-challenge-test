@@ -1,12 +1,12 @@
 // Defines a JavaScript object
-const person = {
-  name: "Alice",
+const userName = {
+  name: "Daniyal",
   age: 30,
-  city: "Wonderland",
+  city: "karachi",
 };
 
 // Converts the object into a JSON string
-const jsonString = JSON.stringify(person);
+const jsonString1 = JSON.stringify(userName);
 
-console.log(jsonString); // Outputs: {"name":"Alice","age":30,"city":"Wonderland"}
+console.log(jsonString1); // Outputs: {"name":"Daniyal","age":30,"city":"karachi"}
 // Demonstrates converting an object to a JSON string, making it easy to store or transmit./

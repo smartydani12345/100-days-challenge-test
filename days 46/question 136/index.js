@@ -1,5 +1,6 @@
-var counter = 0;
-for (var i = 0; i < 5; i++) {
-    counter++;
-    console.log("Iteration", i + 1, ":", "counter =", counter);
+let counters = 0;
+for (let i = 0; i < 5; i++) {
+    counters++;
+    console.log("Iteration", i + 1, ":", "counters =", counters);
 }
+export {};
