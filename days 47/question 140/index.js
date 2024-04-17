@@ -1,0 +1,1 @@
+let lets  = 5; // SyntaxError: Unexpected token 'let'
